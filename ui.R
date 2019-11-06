@@ -32,9 +32,9 @@ ui <- fluidPage(
       br(),
       
       # Buttons to add/remove a hypothesis
-      actionBttn("add", "Add Hypothesis", style = "simple", size = "s", color = "success"),
-      actionBttn("remove", "Remove Last Hypothesis", style = "simple", size = "s", color = "primary"),
-      h5("*Give each hypothesis a unique name*"),
+      actionBttn("add", "Add Case", style = "simple", size = "s", color = "success"),
+      actionBttn("remove", "Remove Last Case", style = "simple", size = "s", color = "primary"),
+      h5("*Give each case a unique name*"),
       div(id = "hypotheses",
           style = "border: 1px solid silver;
                    background-color: #AFEEEE;
@@ -46,6 +46,7 @@ ui <- fluidPage(
                       border: 2px solid #2a334f;")
       
     ),
+    
     
     mainPanel(
       h3("Recall the formula for the posterior distribution:"),

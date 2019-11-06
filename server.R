@@ -2,7 +2,6 @@
 ####THE SERVER####
 ##################
 
-
 shinyServer(function(input, output) {
   
   #Computing the total amount of observations:
@@ -102,5 +101,8 @@ shinyServer(function(input, output) {
   })
   
   
-  
+  # ###First step when writing an app
+  # output$inputlist <- renderPrint({
+  #   shiny::reactiveValuesToList(input)
+  # })
  })
